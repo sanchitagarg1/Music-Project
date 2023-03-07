@@ -1,0 +1,193 @@
+body{
+  background-color: #2f356d;
+  color: #ffffff;
+  
+}
+
+.header input{
+  float: right;
+  height: 30px;
+  width: 350px;
+  margin: 20px;
+  color: #000000;
+}
+
+.header input::placeholder{
+  color: #808080;
+  padding: 5px;
+}
+
+.header i{
+  float: right;
+  margin-top: 27px;
+  font-size: 17px;
+}
+
+
+
+.carousel, ul{
+  height: 400px;
+}
+
+.carousel{
+  position: relative;
+  /* width: 100%; */
+  /* margin: auto; */
+  overflow: hidden;
+  /* margin-top: 100px; */
+  box-shadow: 10px 10px   15px rgba(0, 0, 0, 0.50);
+
+}
+
+
+.carousel li{
+  display: inline-block;
+  height: 300px;
+  float: left;
+  position: relative;
+  width: 800px;
+
+}
+.carousel ul{
+  position: absolute;
+  left: 0;
+  top: -15px;
+  width: 9000px;
+  list-style:none;
+  margin-left: -50px;
+  transition:0.3s linear;
+  display: inline-flex;
+
+}
+
+.carousel-container{
+  /* margin: 0 auto; */
+  padding: 0;
+  width: 100%;
+
+
+}
+
+
+.carousel-container img{
+  width: 818px;
+  padding: 0 10px;
+  background-repeat: no-repeat;
+
+}
+
+
+.carousel ul {
+  animation: slide-animation 15s infinite;
+}
+/* .carousel ul:hover{
+  animation-play-state: paused;
+} */
+
+@keyframes slide-animation{
+  20%{left: 0;}
+  25%{left: -800px;}
+  45%{left: -800px;}
+  50%{left: -1600px;}
+  70%{left: -1600px;}
+  75%{left: -2400px;}
+  98%{left: -2400px;}
+  100%{left: 0;}
+}
+
+.latest_release{
+  padding: 30px 50px 10px 10px;
+}
+
+.latest_release img{
+  
+  height: 90px;
+  width: 130px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+
+.song_info{
+
+  font-size: 15px;
+  margin: auto;
+}
+
+
+.popular_artist img{
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  margin: 15px;
+}
+
+.sidebar{
+  margin-left: 40px;
+  border-top: 1px solid rgba(146, 140, 140,0.5);
+  
+}
+
+
+.sidebar img{
+  height: 60px;
+  width: 60px;
+  margin: 5px 10px 10px 15px;
+  
+
+}
+
+.sidebar i{
+ margin-left: 150px;
+}
+
+
+
+.container-audio {
+  width: 66%;
+  height: auto;
+  padding-top: 40px;
+  border-radius: 5px;
+  background-color: #2f356d;
+  color: #444;
+  margin: 20px auto;
+  overflow: hidden;
+}
+audio {
+  width: 100%;
+  
+}
+
+
+
+@media (max-width:1086px){
+ 
+  .parent_div{
+    width: 100% !important;
+    
+    }
+
+
+    .playlist{
+      /* float: left !important; */
+      width: 100% !important;
+    }
+
+    .sidebar{
+      margin:0 !important;
+      border: none !important;
+      margin-top: 10px;
+    }
+
+    .sidebar:nth-of-type(even) {
+      /* display: inline-flex !important; */
+      float: left !important;
+    }
+
+    .sidebar:nth-of-type(odd) {
+      float: right !important;
+    }
+
+
+}
+
